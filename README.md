@@ -144,12 +144,30 @@ All plot inputs are available at:
 👉 [https://tinyurl.com/ysyeafv2](https://tinyurl.com/ysyeafv2)
 
 **Key Notebooks:**
-- **1_mriomaps_gtap.ipynb** — Generates *Figure 1* and supplementary *S9.csv* (GTAP-based).  
-- **1_mriomaps_eora.ipynb** — Generates *Figure S3* and *S10.csv* (EORA counterpart).  
-- **2_Merge_bubble_bar.ipynb** — Produces *Figure 2* (and *Figure S6* for EORA).  
-- **3_RatioPlot.ipynb** — Produces *Figure 3* (and *Figures S7–S8*).  
-- **4_correlation_plot.ipynb** — Produces *Figure 4*, *Figures S11–S12*, and exports *S14.xlsx* summarizing cross-model correlations.  
-- **5_VSLPlot.ipynb** — Produces *Figure 5* (and *Figure S13*).  
+
+- **1_mriomaps_gtap.ipynb**  
+  **Input:** S7.csv (consumption-based concentrations – GTAP), individual CSVs from Folder S5 (production-based concentrations – GTAP), and S3.csv (consumption-based deaths – GTAP).  
+  **Output:** *Figure 1* (main text) and *S9.csv* (total net bidirectional export of deaths for all GTAP countries).
+
+- **1_mriomaps_eora.ipynb**  
+  **Input:** S8.csv (consumption-based concentrations – EORA), individual CSVs from Folder S6 (production-based concentrations – EORA), and S4.csv (consumption-based deaths – EORA).  
+  **Output:** *Figure S3* (supplementary counterpart of Figure 1) and *S10.csv* (total net bidirectional export of deaths for all EORA countries).
+
+- **2_Merge_bubble_bar.ipynb**  
+  **Input:** S1.csv (production-based deaths – GTAP), S2.csv (production-based deaths – EORA), S3.csv (consumption-based deaths – GTAP), S4.csv (consumption-based deaths – EORA).  
+  **Output:** *Figure 2* (main text) and *Figure S6* (EORA counterpart).
+
+- **3_RatioPlot.ipynb**  
+  **Input:** S3.csv (consumption-based deaths – GTAP) and S4.csv (consumption-based deaths – EORA).  
+  **Output:** *Figure 3* (main text), *Figure S7* (GTAP supplementary), and *Figure S8* (EORA counterpart).
+
+- **4_correlation_plot.ipynb**  
+  **Input:** S3.csv and S4.csv (consumption-based deaths – GTAP/EORA); demand and output fractions computed in `4_output_fraction.ipynb` and `5_demand_fraction.ipynb`.  
+  **Output:** *Figure 4* (main text), *Figures S11–S12* (supplementary counterparts), and *S14.xlsx* (cross-model Pearson correlation summary).
+
+- **5_VSLPlot.ipynb**  
+  **Input:** S3.csv (GTAP) and S4.csv (EORA).  
+  **Output:** *Figure 5* (main text) and *Figure S13* (EORA counterpart).
 
 **Output of Folder 5:**  
 All published figures and supporting data visualizations.
