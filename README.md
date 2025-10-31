@@ -1,7 +1,7 @@
-# 🌍 MRIO Analysis for *“International (Fair) Trade in Air-Quality-Related Mortality”*
+# 🌍 Analysis Code for *“International (Fair) Trade in Air-Quality-Related Mortality”*
 
 This repository contains the full Python workflow used in the paper **“International (Fair) Trade in Air-Quality-Related Mortality.”**  
-The project integrates the **InMAP atmospheric model** with **multi-regional input–output (MRIO)** frameworks (GTAP and EORA datasets) to quantify **production- and consumption-based PM₂.₅ concentrations, health impacts, and economic externalities** associated with international trade.
+The project integrates the **InMAP atmospheric model** with **multi-regional input–output (MRIO)** frameworks (GTAP and EORA datasets) to quantify **country-level production- and consumption-based PM₂.₅ concentrations, health impacts, and economic externalities** associated with international trade.
 
 ---
 
@@ -50,7 +50,7 @@ The repository is structured into six main folders, corresponding to the major s
   Converts daily **CEDS emissions** into annual mean gridded NetCDF files for use in InMAP.  
   *Output:* Annual average anthropogenic emissions (NetCDF)  
 
-**Output of Folder 1:**  
+**Output of Folder 1 (after InMAP simulations):**  
 High-resolution **production-based PM₂.₅ concentration fields** simulated by InMAP.
 
 ---
@@ -83,7 +83,7 @@ High-resolution **consumption-based concentration fields** for each country.
 
 **Key Notebooks:**
 - **1_NCDLRI.ipynb**  
-  Calculates mortality from *Non-Communicable Diseases* (NCD) and *Lower Respiratory Infections* (LRI) per country using GBD data.  
+  Calculates mortality from *Non-Communicable Diseases* (NCD) and *Lower Respiratory Infections* (LRI) per country using Global Burden of Disease (GBD) data.  
 
 - **2_CountryClassify.ipynb**  
   Implements *Algorithm S1* to map each InMAP grid cell to GTAP/EORA countries based on geographic location.  
@@ -116,17 +116,17 @@ Country-level and sector-level mortality attributable to PM₂.₅ from both pro
 
 **Key Notebooks:**
 - **1_VSL.ipynb**  
-  Calculates *Value of Statistical Life (VSL)* using the method of Viscusi & Masterman (Income Elasticity Approach).  
+  Calculates *Value of Statistical Life (VSL)* using the method of Viscusi & Masterman (Income Elasticities and Global Values of a Statistical Life).  
 
 - **2_PlaywithVSL.ipynb**  
-  Assesses global trade-related externalities under three scenarios of VSL equality (baseline, consumer-equalized, and self-only).  
+  Assesses global trade-related externalities under three scenarios of VSL equality (“Business as Usual", Global Community”, and Fair Trade in Deaths”).  
   Produces results shown in *Figure 5 (main text)*.  
 
 - **3_Fraction.ipynb**  
   Computes domestic vs. international mortality fractions caused by each country’s consumption and production (used in *Figure 3*).  
 
 - **4_output_fraction.ipynb**  
-  Calculates **Total Output Fraction (Frac_TO mn)** for sectoral analysis.  
+  Calculates **Total Output Fraction (\( \text{Frac\_TO}_{\tilde{m}n} \))** for sectoral analysis.  
 
 - **5_demand_fraction.ipynb**  
   Computes **Direct and Total Final Demand Fractions (Frac_DFD mn and Frac_TFD mn)** for sectoral decomposition.  
@@ -214,4 +214,4 @@ For questions or collaboration inquiries, please contact:
 **Shiyuan Wang**  
 PhD Candidate, Environmental Engineering  
 University of Illinois Urbana–Champaign  
-📧 your-email@illinois.edu
+📧 shiyuan8@illinois.edu
