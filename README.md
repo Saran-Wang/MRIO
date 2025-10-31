@@ -126,10 +126,12 @@ Country-level and sector-level mortality attributable to PM₂.₅ from both pro
   Computes domestic vs. international mortality fractions caused by each country’s consumption and production (used in *Figure 3*).  
 
 - **4_output_fraction.ipynb**  
-  Calculates **Total Output Fraction ($ \text{Frac\_TO}_{\tilde{m}n} $)** for sectoral analysis.  
+  Calculates **Total Output Fraction (`Frac_TO_{~m n}`)** for sectoral analysis.  
+  <br>
 
 - **5_demand_fraction.ipynb**  
-  Computes **Direct and Total Final Demand Fractions (Frac_DFD mn and Frac_TFD mn)** for sectoral decomposition.  
+  Computes **Direct and Total Final Demand Fractions (`Frac_DFD_{~m ~n}` and `Frac_TFD_{~m ~n}`)** for sectoral decomposition.  
+  <br>
 
 **Output of Folder 4:**  
 Country- and sector-level indicators of trade-related mortality externalities and inequality.
