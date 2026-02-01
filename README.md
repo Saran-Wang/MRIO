@@ -1,6 +1,6 @@
-# 🌍 Analysis Code for *“International (Fair) Trade in Air-Quality-Related Mortality”*
+# 🌍 Analysis Code for *“International Trade in Air-Quality-Related Mortality”*
 
-This repository contains the full Python workflow used in the paper **“International (Fair) Trade in Air-Quality-Related Mortality.”**  
+This repository contains the full Python workflow used in the paper **“International Trade in Air-Quality-Related Mortality.”**  
 The project integrates the **InMAP atmospheric model** with **multi-regional input–output (MRIO)** frameworks (GTAP and EORA datasets) to quantify **country-level production- and consumption-based PM₂.₅ concentrations, health impacts, and economic externalities** associated with international trade.
 
 ---
