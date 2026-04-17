@@ -225,7 +225,7 @@ All derived datasets (country-level mortality, concentration factors, uncertaint
 
 ## 🧾 Citation
 If you use this repository or its derived data, please cite the original paper:  
-> Wang, S. *et al.* “International (Fair) Trade in Air-Quality-Related Mortality.” *[Journal Name, Year, DOI TBD]*.
+> Wang, S., Thakrar, S., Johnson, J. et al. [International trade and air-quality-related mortality.](https://www.nature.com/articles/s41467-026-71408-w) Nat Commun 17, 3518 (2026). https://doi.org/10.1038/s41467-026-71408-w
 
 ---
 
